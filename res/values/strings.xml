@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TipCalc</string>
+    <string name="tipPercentage">TIP PERCENTAGE</string>
+    <string name="tipAmount">TIP AMOUNT</string>
+    <string name="numberOfPeople">NUMBER OF PEOPLE</string>
+    <string name="billTotal">BILL TOTAL</string>
+    <string name="perPerson">PER PERSON</string>
+    <string name="btnReset">Reset</string>
+    <string name="less_than">&lt;</string>
+    <string name="greater_than">></string>
+    <string name="_30_00">$30.00</string>
+    <string name="total_amount">TOTAL</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="the_total_has_been_rounded_to_fit_the_inputs">The total has been rounded to fit the inputs</string>
+    <string name="_">(!)</string>
+    <string name="per_person">Per Person</string>
+    <string name="tip_">"Tip: "</string>
+    <string name="_2_50">$2.50</string>
+    <string name="total_">"Total: "</string>
+    <string name="_15_00">$15.00</string>
+    <string name="overall">Overall</string>
+    <string name="_5_00">$5.00</string>
+</resources>

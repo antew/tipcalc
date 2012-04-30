@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.antew.tipcalc"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res/com.antew.tipcalc"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res/com.antew.tipcalc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/billTotalLabel"
+                style="@style/tipcalcText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/billTotal"
+                android:textColor="#33B5E5"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/billTotalLabel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#33B5E5" />
+
+            <com.antew.tipcalc.widgets.HorizontalNumberPicker
+                android:id="@+id/billTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/divider1"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:minValue="0"
+                app:precision="2"
+                app:step="2"
+                app:type="bill_total" >
+            </com.antew.tipcalc.widgets.HorizontalNumberPicker>
+
+            <TextView
+                android:id="@+id/tipPercentageLabel"
+                style="@style/tipcalcText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/billTotal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/tipPercentage"
+                android:textColor="#33B5E5"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tipPercentageLabel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#33B5E5" />
+
+            <com.antew.tipcalc.widgets.HorizontalNumberPicker
+                android:id="@+id/tipPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/divider2"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:minValue="0"
+                app:precision="0"
+                app:step="1"
+                app:type="tip_percentage" >
+            </com.antew.tipcalc.widgets.HorizontalNumberPicker>
+
+            <TextView
+                android:id="@+id/numOfPeopleLabel"
+                style="@style/tipcalcText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tipPercentage"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/numberOfPeople"
+                android:textColor="#33B5E5"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/numOfPeopleLabel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#33B5E5" />
+
+            <com.antew.tipcalc.widgets.HorizontalNumberPicker
+                android:id="@+id/numOfPeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/divider3"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:minValue="1"
+                app:precision="0"
+                app:step="1"
+                app:type="number_of_people" >
+            </com.antew.tipcalc.widgets.HorizontalNumberPicker>
+
+            <TextView
+                android:id="@+id/tipAmountLabel"
+                style="@style/tipcalcText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/numOfPeople"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/tipAmount"
+                android:textColor="#33B5E5"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tipAmountLabel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#33B5E5" />
+
+            <com.antew.tipcalc.widgets.HorizontalNumberPicker
+                android:id="@+id/tipAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/divider4"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                app:minValue="0"
+                app:precision="2"
+                app:step="1"
+                app:type="tip_amount" >
+            </com.antew.tipcalc.widgets.HorizontalNumberPicker>
+
+            <TextView
+                android:id="@+id/rounded_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tipAmount"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/_"
+                android:textColor="#ff0000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rounded_note2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/rounded_note"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/rounded_note"
+                android:paddingBottom="80dp"
+                android:text="@string/the_total_has_been_rounded_to_fit_the_inputs" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/perPersonWrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/totalWrapper"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bar"
+        android:baselineAligned="false"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/perPersonTotalWrapper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/perPersonHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/per_person"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/perPersonDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/perPersonHeading"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    android:id="@+id/perPersonTipWrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/perPersonDivider"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/perPersonTipLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tip_" />
+                    <TextView
+                        android:id="@+id/perPersonTip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_2_50" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/perPersonTipWrapper"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/perPersonTotalLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_" />
+                    <TextView
+                        android:id="@+id/perPersonTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_15_00" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/totalWrapper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/totalHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/overall"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/totalDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/totalHeading"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    android:id="@+id/totalTipWrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/totalDivider"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/totalTipLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/tip_" />
+
+                    <TextView
+                        android:id="@+id/totalTip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/_5_00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/totalWithTipWrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/totalTipWrapper"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/totalWithTipLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_" />
+
+                    <TextView
+                        android:id="@+id/totalWithTip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_30_00" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:text="@string/minus"
+        android:width="60dp"
+        android:textStyle="bold"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/txtValue"
+        android:layout_width="wrap_content"
+        android:layout_weight="60"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:width="80dp">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:text="@string/plus"
+        android:width="60dp"
+        android:textStyle="bold"
+        android:textSize="26sp" />
+
+</LinearLayout>
