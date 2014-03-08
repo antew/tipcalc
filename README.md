@@ -10,7 +10,7 @@ This app is ad-free and does not require any permissions.
 
 Check it out on the Google Play Store - [Easy Tip and Split Calculator](https://play.google.com/store/apps/details?id=com.antew.tipcalc)
 
-![Screenshot](http://imgur.com/tYIgaE1)
+![Screenshot](http://imgur.com/tYIgaE1.png)
 
 ## Issues and Feature Requests
 Please see the [issues](https://github.com/antew/tipcalc/issues) section
