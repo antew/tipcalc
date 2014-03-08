@@ -1,13 +1,17 @@
-            DO WHAT THE HELL YOU WANT TO PUBLIC LICENSE 
-                    Version 1, December 2012 
+# Easy Tip and Split Calculator
 
- Copyright (C) 2012 Antew < antew@antew.com | antew.com > 
+A tip calculator for Android I made to familiarize myself with the platform.
 
- Everyone is permitted to copy and distribute verbatim or modified 
- copies of this license document, and changing it is allowed as long 
- as the name is changed. 
+Split bills and calculate tips.
+Split checks/bills between any number of people.
+Changing any field automatically recalculates the others.
+Shows the per-person tip and total amounts, as well as the overall tip and total amounts.
+This app is ad-free and does not require any permissions.
 
-            DO WHAT THE HELL YOU WANT TO PUBLIC LICENSE 
-   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+Check it out on the Google Play Store - [Easy Tip and Split Calculator](https://play.google.com/store/apps/details?id=com.antew.tipcalc)
 
-  0. You just DO WHAT THE HELL YOU WANT TO. 
+![Screenshot](http://imgur.com/tYIgaE1)
+
+## Issues and Feature Requests
+Please see the [issues](https://github.com/antew/tipcalc/issues) section
+to report any bugs or feature requests and to see the list of known issues.
